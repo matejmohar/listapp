@@ -1,0 +1,67 @@
+.country-wrapper {
+  //width: 70%;
+  margin: 0 auto;
+
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+
+  .country-box {
+    margin: 30px;
+    width: 400px;
+
+    height: 130px;
+    padding: 10px;
+    box-shadow: 0px 0px 8px 4px #e9e9e9;
+    border-radius: 6px;
+    display: inline-block;
+    box-sizing: border-box;
+
+    transition: transform 0.2s;
+
+    .name {
+      font-size: 20px;
+      text-align: center;
+      color: #50b0ff;
+      padding-top: 7px;
+      padding-bottom: 28px;
+      letter-spacing: 1px;
+      max-height: 23px;
+    }
+
+    .data-wrapper {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: stretch;
+      align-content: stretch;
+      .cities {
+      }
+
+      .locations {
+      }
+
+      .cities,
+      .locations,
+      .measurements {
+        text-align: center;
+        color: #222222;
+        .text {
+          display: block;
+          margin-top: 6px;
+        }
+        .value {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+
+  .country-box:hover {
+    cursor: pointer;
+    //box-shadow: 0px 0px 10px 10px #668aff;
+    box-shadow: 0px 0px 11px 4px #50b0ff80;
+    //transform: scale(1.05);
+  }
+}

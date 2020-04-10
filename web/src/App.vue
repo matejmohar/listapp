@@ -1,8 +1,8 @@
 <template>
-	<div id="app">
-		<top-menu></top-menu>
-		<router-view />
-	</div>
+  <div id="app">
+    <top-menu></top-menu>
+    <router-view />
+  </div>
 </template>
 <script>
 //modules
@@ -15,23 +15,23 @@ import TopMenu from "@/components/TopMenu.vue";
 import { mapActions } from "vuex";
 
 export default {
-	components: {
-		TopMenu,
-	},
-	methods: {
-		...mapActions("air", ["getCountries"]),
-	},
-	created() {
-		this.$store.registerModule("air", moduleAir);
+  components: {
+    TopMenu
+  },
+  methods: {
+    ...mapActions("air", ["fetchCountries"])
+  },
+  created() {
+    this.$store.registerModule("air", moduleAir);
 
-		this.getCountries()
-			.then((response) => {
-				console.log(response.data);
-			})
-			.catch((error) => {
-				console.log(error);
-			});
-	},
+    this.fetchCountries()
+      .then(response => {
+        console.log(response.data);
+      })
+      .catch(error => {
+        console.log(error);
+      });
+  }
 };
 </script>
 

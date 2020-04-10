@@ -1,12 +1,17 @@
 <template>
-  <div class="home">Home test</div>
+  <div class="home">
+    <country-list></country-list>
+  </div>
 </template>
 
 <script>
 // @ is an alias to /src
+import CountryList from "@/components/CountryView/CountryList.vue";
 
 export default {
   name: "Home",
-  components: {}
+  components: {
+    CountryList
+  }
 };
 </script>

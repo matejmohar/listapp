@@ -1,28 +1,30 @@
 #head {
-	height: 100px;
-	width: 100%;
-	background-color: rgb(80, 176, 255);
+  height: 100px;
+  width: 100%;
+  background-color: #65c2ff; //#50b0ff;
+  position: sticky;
+  top: 0;
 
-	.filter {
-		margin: auto;
-		width: 50%;
-		height: 100%;
+  .filter {
+    margin: auto;
+    width: 50%;
+    height: 100%;
 
-		.filtering {
-			width: 100%;
-			padding: 12px 20px;
-			margin: 25px 0px;
-			border-radius: 6px;
-			display: inline-block;
-			border: 1px solid rgb(190, 190, 190);
-			box-sizing: border-box;
-		}
-	}
+    .filtering {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 25px 0px;
+      border-radius: 6px;
+      display: inline-block;
+      border: 1px solid #bebebe;
+      box-sizing: border-box;
+    }
+  }
 }
 @media screen and (max-width: 667px) {
-	#head {
-		.filter {
-			width: 90%;
-		}
-	}
+  #head {
+    .filter {
+      width: 90%;
+    }
+  }
 }
