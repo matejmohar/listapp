@@ -5,32 +5,16 @@
   </div>
 </template>
 <script>
-//modules
 import moduleAir from "@/store/air/moduleAir.js";
 
-//components
 import TopMenu from "@/components/TopMenu.vue";
-
-//mapper
-import { mapActions } from "vuex";
 
 export default {
   components: {
     TopMenu
   },
-  methods: {
-    ...mapActions("air", ["fetchCountries"])
-  },
   created() {
     this.$store.registerModule("air", moduleAir);
-
-    this.fetchCountries()
-      .then(response => {
-        console.log(response.data);
-      })
-      .catch(error => {
-        console.log(error);
-      });
   }
 };
 </script>

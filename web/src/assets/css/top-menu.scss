@@ -1,9 +1,39 @@
 #head {
-  height: 100px;
+  height: 130px;
   width: 100%;
-  background-color: #65c2ff; //#50b0ff;
+  //background-color: #65c2ff;
+  //background-image: url("../assets/images/clouds.jpg");
+  background-image: url("../assets/images/clouds.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   position: sticky;
   top: 0;
+  z-index: 100;
+
+  .go-back {
+    float: left;
+    height: 100%;
+    width: 40px;
+    i {
+      border: solid #ffffff;
+      border-width: 4px 0px 0px 4px;
+      display: inline-block;
+      padding: 7px;
+      position: absolute;
+      top: 50%;
+      margin-left: 20px;
+    }
+    i.arrow-left {
+      transform: rotate(-45deg) translateY(-50%);
+    }
+  }
+
+  .go-back:hover {
+    background-color: #76a1ff55;
+    cursor: pointer;
+  }
 
   .filter {
     margin: auto;
@@ -13,18 +43,22 @@
     .filtering {
       width: 100%;
       padding: 12px 20px;
-      margin: 25px 0px;
+
       border-radius: 6px;
       display: inline-block;
       border: 1px solid #bebebe;
       box-sizing: border-box;
+
+      top: 50%;
+      position: relative;
+      transform: translateY(-50%);
     }
   }
 }
 @media screen and (max-width: 667px) {
   #head {
     .filter {
-      width: 90%;
+      width: 80%;
     }
   }
 }

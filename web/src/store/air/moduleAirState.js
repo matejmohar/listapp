@@ -1,4 +1,9 @@
 export default {
-	countries: [],
-	filter: ""
+  countries: [],
+  filterCountry: "",
+  filterCity: "",
+
+  latestMeasurements: [],
+  cities: [],
+  parameters: []
 };

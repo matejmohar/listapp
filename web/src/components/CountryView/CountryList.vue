@@ -1,5 +1,5 @@
 <template>
-  <div class="country-wrapper">
+  <div class="country-wrapper box-wrapper">
     <country-box v-for="country in getFilteredCountries" :key="country.code" :country="country"></country-box>
   </div>
 </template>
