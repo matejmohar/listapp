@@ -1,6 +1,5 @@
 export default {
   getAllCountries: state => state.countries,
-  //getCountryByCode: state => code => state.countries.filter(o => o.code == code),
   getFilter: state => filterType => {
     if (filterType == "Cities") {
       return state.filterCity;
