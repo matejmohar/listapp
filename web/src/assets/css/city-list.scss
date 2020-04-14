@@ -1,0 +1,34 @@
+.city-wrapper {
+  .city-name {
+    text-align: center;
+    font-size: 40px;
+    color: #65c2ff;
+    padding: 10px 0;
+  }
+  .location-wrapper {
+    .location-box {
+      .data-wrapper {
+        .parameter-wrapper {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: nowrap;
+          justify-content: flex-start;
+          align-items: stretch;
+          align-content: stretch;
+
+          margin-bottom: 1px;
+          .parameter-name {
+            flex: 0 70px;
+          }
+          .parameter-value {
+            flex: 2;
+          }
+          .parameter-timestamp {
+            flex: 0 0 auto;
+            text-align: end;
+          }
+        }
+      }
+    }
+  }
+}
